@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>홍루이젠</title>
+    <script src="./js/jquery.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <img src="images/bg-img.png" alt="background-color-img" class="background-color-img">
+    <section class="container">
+        <h2>CU VENDING MACHINE</h2>
+        <div class="logo">
+            <img src="./images/head-center-logo.PNG" alt="HongRuiZhen_logo">
+            <p>하나의 샌드위치에 담긴 수많은 매력, 홍루이젠</p>
+        </div>
+
+        <div class="wrapper">
+            <div class="sandwich_box">
+                <div class="item_box">
+                    <ul>
+                        <li>
+                            <img src="./images/milk-pong-choco.png" alt="milk-pong-choco" class="small">
+                            <strong>우유퐁당<br> 케익샌드 초코</strong>
+                            <span>3,900</span>
+                        </li>
+                        <li>
+                            <img src="./images/milk-pong-plain.png" alt="milk-pong-plain" class="small">
+                            <strong>우유퐁당<br> 케익샌드 플레인</strong>
+                            <span>3,900</span>
+                        </li>
+                        <li>
+                            <img src="./images/corn-cream.png" alt="corn-cream" class="small">
+                            <strong>옥수수크림<br> 샌드위치</strong>
+                            <span>2,600</span>
+                        </li>
+                        <li>
+                            <img src="./images/cookie-and-cream.png" alt="cookie-and-cream">
+                            <strong>쿠키앤크림<br> 샌드위치</strong>
+                            <span>2,600</span>
+                        </li>
+                        <li>
+                            <img src="./images/strawberry.png" alt="strawberry">
+                            <strong>딸기퐁당<br> 샌드위치</strong>
+                            <span>2,300</span>
+                        </li>
+                        <li>
+                            <img src="./images/choco.png" alt="choco">
+                            <strong>초코퐁당<br> 샌드위치</strong>
+                            <span>2,600</span>
+                        </li>
+                        <li>
+                            <img src="./images/ham.png" alt="ham">
+                            <strong>오리지널<br> 햄샌드위치</strong>
+                            <span>2,300</span>
+                        </li>
+                        <li>
+                            <img src="./images/ham-cheese.png" alt="ham-cheese">
+                            <strong>햄치즈 샌드위치</strong>
+                            <span>2,400</span>
+                        </li>
+                        <li>
+                            <img src="./images/cheese.png" alt="cheese">
+                            <strong>치즈 샌드위치</strong>
+                            <span>2,200</span>
+                        </li>
+                        <li>
+                            <img src="./images/soboru.png" alt="soboru">
+                            <strong>갓군샌 눈꽃소보루</strong>
+                            <span>3,300</span>
+                        </li>
+                        <li>
+                            <img src="./images/triple-cheese.png" alt="triple-cheese">
+                            <strong>갓군샌 트리플치즈</strong>
+                            <span>3,500</span>
+                        </li>
+                        <li>
+                            <img src="./images/garlic-butter.png" alt="garlic-butter">
+                            <strong>갓군샌 갈릭버터</strong>
+                            <span>3,600</span>
+                        </li>
+                    </ul>
+                </div> <!-- item_box -->
+            </div> <!-- ramen_box -->
+    
+            <div class="row-flex">
+                
+                <div class="price_list_box">
+                    <div class="price_list">
+                        <p>주문 목록</p>
+                        <div class="list_product">
+    
+                        </div>
+                    </div>
+                    <div class="total_price_box">
+                        <div class="bill_total">
+                            <div>
+                                <span>전체 수량</span>
+                                <span class="total_count">0</span>
+                            </div>
+                            <div>
+                                <span>전체 가격</span>
+                                <span class="total_price">0</span>
+                            </div>
+                        </div>
+                    </div> <!-- total_price_box -->
+                </div> <!-- price_list_box -->
+        
+                <div class="money_box">
+                    <div class="money_list_box">
+                        <span class="money_list">50,000</span>
+                        <span class="money_list">10,000</span>
+                        <span class="money_list">5,000</span>
+                        <span class="money_list">1,000</span>
+                        <span class="money_list">500</span>
+                        <span class="money_list">100</span>
+                    </div>
+                    <div class="payment_box">
+                        <div class="payment_span">
+                            <span>지불 금액</span>
+                            <span class="total_money">0</span>
+                        </div>
+                        <input class="totalAmount" type="hidden" value="0">
+                        <input class="totalPay" type="hidden" value="0">
+                        <button type="button" class="pay_btn">지불하기</button>
+                        <button type="button" class="clear_btn">다시하기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup_bg"></div>
+            <div class="change_popup_box">
+                <div class="receipt_title">
+                    <h3>영수증</h3>
+                    <p>냉장고에 보관하시고, 가급적 빠른 시일 내로 섭취하세요</p>
+                    <div class="span_box">
+                        <span>잔액</span>
+                        <span class="receipt_total"></span>
+                        <span>원</span>
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <button type="button" class="reset_btn">다시하기</button>
+                    <button type="button" class="close_btn">닫기</button>
+                </div>
+            </div> <!-- change_popup_box-->
+            <div class="popup_text">
+                <span>물건을 선택해주세요.</span>
+                <div class="btn_box">
+                    <button type="button" class="reset_btn">다시하기</button>
+                    <button type="button" class="close_btn">닫기</button>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- container -->
+</body>
+</html>
